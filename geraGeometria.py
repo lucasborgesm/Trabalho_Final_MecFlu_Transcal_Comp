@@ -128,7 +128,7 @@ physicalStr += "Physical Surface(\"fluid\") = {1};\n"
 meshStr = pointsStr + linesStr + curvesStr + physicalStr
 
 # Escrevendo o Arquivo GEO
-with open(f'Malhas/msh_{file_name}_{angle}.geo', 'w') as mesh:
+with open(f'Geometrias/msh_{file_name}_{angle}.geo', 'w') as mesh:
     mesh.write(meshStr)
 
-print(f"A geometria foi salva no arquivo 'Malhas/msh_{file_name}_{angle}.geo'")
+print(f"A geometria foi salva no arquivo 'Geometrias/msh_{file_name}_{angle}.geo'")
